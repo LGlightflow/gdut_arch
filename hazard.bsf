@@ -1,0 +1,114 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2023  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 224 224)
+	(text "hazard" (rect 5 0 30 12)(font "Arial" ))
+	(text "inst" (rect 8 192 20 204)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "opcode[3..0]" (rect 0 0 48 12)(font "Arial" ))
+		(text "opcode[3..0]" (rect 21 27 69 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "func[2..0]" (rect 0 0 37 12)(font "Arial" ))
+		(text "func[2..0]" (rect 21 43 58 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "readone[2..0]" (rect 0 0 51 12)(font "Arial" ))
+		(text "readone[2..0]" (rect 21 59 72 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "readtwo[2..0]" (rect 0 0 50 12)(font "Arial" ))
+		(text "readtwo[2..0]" (rect 21 75 71 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "idexwrite[2..0]" (rect 0 0 53 12)(font "Arial" ))
+		(text "idexwrite[2..0]" (rect 21 91 74 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "idexMemWE" (rect 0 0 54 12)(font "Arial" ))
+		(text "idexMemWE" (rect 21 107 75 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 1))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "idexwe" (rect 0 0 25 12)(font "Arial" ))
+		(text "idexwe" (rect 21 123 46 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 1))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "exmemwrite[2..0]" (rect 0 0 68 12)(font "Arial" ))
+		(text "exmemwrite[2..0]" (rect 21 139 89 151)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 3))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "memstage" (rect 0 0 42 12)(font "Arial" ))
+		(text "memstage" (rect 21 155 63 167)(font "Arial" ))
+		(line (pt 0 160)(pt 16 160)(line_width 1))
+	)
+	(port
+		(pt 208 32)
+		(output)
+		(text "pcenable" (rect 0 0 34 12)(font "Arial" ))
+		(text "pcenable" (rect 153 27 187 39)(font "Arial" ))
+		(line (pt 208 32)(pt 192 32)(line_width 1))
+	)
+	(port
+		(pt 208 48)
+		(output)
+		(text "ifidenable" (rect 0 0 35 12)(font "Arial" ))
+		(text "ifidenable" (rect 152 43 187 55)(font "Arial" ))
+		(line (pt 208 48)(pt 192 48)(line_width 1))
+	)
+	(port
+		(pt 208 64)
+		(output)
+		(text "idexflush" (rect 0 0 34 12)(font "Arial" ))
+		(text "idexflush" (rect 153 59 187 71)(font "Arial" ))
+		(line (pt 208 64)(pt 192 64)(line_width 1))
+	)
+	(drawing
+		(rectangle (rect 16 16 192 192)(line_width 1))
+	)
+)

@@ -1,0 +1,170 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2023  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 344 240)
+	(text "stage2" (rect 5 0 52 20)(font "Intel Clear" (font_size 8)))
+	(text "inst" (rect 8 201 31 220)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "pc[15..0]" (rect 0 0 61 20)(font "Intel Clear" (font_size 8)))
+		(text "pc[15..0]" (rect 21 27 82 47)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Bu_register[15..0]" (rect 0 0 125 20)(font "Intel Clear" (font_size 8)))
+		(text "Bu_register[15..0]" (rect 21 43 146 63)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "bsel" (rect 0 0 29 20)(font "Intel Clear" (font_size 8)))
+		(text "bsel" (rect 21 59 50 79)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "instruction[15..0]" (rect 0 0 121 20)(font "Intel Clear" (font_size 8)))
+		(text "instruction[15..0]" (rect 21 75 142 95)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "regselect[1..0]" (rect 0 0 99 20)(font "Intel Clear" (font_size 8)))
+		(text "regselect[1..0]" (rect 21 91 120 111)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "WriteReg[2..0]" (rect 0 0 99 20)(font "Intel Clear" (font_size 8)))
+		(text "WriteReg[2..0]" (rect 21 107 120 127)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "Rf_WriteData[15..0]" (rect 0 0 138 20)(font "Intel Clear" (font_size 8)))
+		(text "Rf_WriteData[15..0]" (rect 21 123 159 143)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 128)(pt 16 128)(line_width 3))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "WriteEnable" (rect 0 0 86 20)(font "Intel Clear" (font_size 8)))
+		(text "WriteEnable" (rect 21 139 107 159)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 144)(pt 16 144))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "clk" (rect 0 0 20 20)(font "Intel Clear" (font_size 8)))
+		(text "clk" (rect 21 155 41 175)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 160)(pt 16 160))
+	)
+	(port
+		(pt 328 32)
+		(output)
+		(text "BU_PC[15..0]" (rect 0 0 92 20)(font "Intel Clear" (font_size 8)))
+		(text "BU_PC[15..0]" (rect 215 27 307 47)(font "Intel Clear" (font_size 8)))
+		(line (pt 328 32)(pt 312 32)(line_width 3))
+	)
+	(port
+		(pt 328 48)
+		(output)
+		(text "idexpc[15..0]" (rect 0 0 89 20)(font "Intel Clear" (font_size 8)))
+		(text "idexpc[15..0]" (rect 218 43 307 63)(font "Intel Clear" (font_size 8)))
+		(line (pt 328 48)(pt 312 48)(line_width 3))
+	)
+	(port
+		(pt 328 64)
+		(output)
+		(text "regOneOut[15..0]" (rect 0 0 123 20)(font "Intel Clear" (font_size 8)))
+		(text "regOneOut[15..0]" (rect 184 59 307 79)(font "Intel Clear" (font_size 8)))
+		(line (pt 328 64)(pt 312 64)(line_width 3))
+	)
+	(port
+		(pt 328 80)
+		(output)
+		(text "regTwoOut[15..0]" (rect 0 0 125 20)(font "Intel Clear" (font_size 8)))
+		(text "regTwoOut[15..0]" (rect 182 75 307 95)(font "Intel Clear" (font_size 8)))
+		(line (pt 328 80)(pt 312 80)(line_width 3))
+	)
+	(port
+		(pt 328 96)
+		(output)
+		(text "immed16Out[15..0]" (rect 0 0 138 20)(font "Intel Clear" (font_size 8)))
+		(text "immed16Out[15..0]" (rect 169 91 307 111)(font "Intel Clear" (font_size 8)))
+		(line (pt 328 96)(pt 312 96)(line_width 3))
+	)
+	(port
+		(pt 328 112)
+		(output)
+		(text "shiftImmOut[15..0]" (rect 0 0 133 20)(font "Intel Clear" (font_size 8)))
+		(text "shiftImmOut[15..0]" (rect 174 107 307 127)(font "Intel Clear" (font_size 8)))
+		(line (pt 328 112)(pt 312 112)(line_width 3))
+	)
+	(port
+		(pt 328 128)
+		(output)
+		(text "immed8Out[7..0]" (rect 0 0 119 20)(font "Intel Clear" (font_size 8)))
+		(text "immed8Out[7..0]" (rect 188 123 307 143)(font "Intel Clear" (font_size 8)))
+		(line (pt 328 128)(pt 312 128)(line_width 3))
+	)
+	(port
+		(pt 328 144)
+		(output)
+		(text "writebackOut[2..0]" (rect 0 0 130 20)(font "Intel Clear" (font_size 8)))
+		(text "writebackOut[2..0]" (rect 177 139 307 159)(font "Intel Clear" (font_size 8)))
+		(line (pt 328 144)(pt 312 144)(line_width 3))
+	)
+	(port
+		(pt 328 160)
+		(output)
+		(text "readRegisters[5..0]" (rect 0 0 130 20)(font "Intel Clear" (font_size 8)))
+		(text "readRegisters[5..0]" (rect 177 155 307 175)(font "Intel Clear" (font_size 8)))
+		(line (pt 328 160)(pt 312 160)(line_width 3))
+	)
+	(port
+		(pt 328 176)
+		(output)
+		(text "resultOne[2..0]" (rect 0 0 106 20)(font "Intel Clear" (font_size 8)))
+		(text "resultOne[2..0]" (rect 201 171 307 191)(font "Intel Clear" (font_size 8)))
+		(line (pt 328 176)(pt 312 176)(line_width 3))
+	)
+	(port
+		(pt 328 192)
+		(output)
+		(text "resultTwo[2..0]" (rect 0 0 107 20)(font "Intel Clear" (font_size 8)))
+		(text "resultTwo[2..0]" (rect 200 187 307 207)(font "Intel Clear" (font_size 8)))
+		(line (pt 328 192)(pt 312 192)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 312 208))
+	)
+)
